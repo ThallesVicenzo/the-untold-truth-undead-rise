@@ -48,6 +48,5 @@ public class ZombieController : MonoBehaviour
             moveDirecton.Normalize();
             rb.velocity = moveDirecton * zombieSpeed;
         }
-        Debug.Log("distancia zumbi player: " + Vector2.Distance(transform.position, player.transform.position));
     }
 }
