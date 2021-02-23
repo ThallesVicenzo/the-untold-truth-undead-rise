@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 15195ad31b84509429dc93c0b6b4fbc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3929309236763229851
+    second: HC_Enemy_Zombie_0
+  - first:
+      213: 8285145550894476276
+    second: HC_Enemy_Zombie_1
+  - first:
+      213: -4279357364779693914
+    second: HC_Enemy_Zombie_2
+  - first:
+      213: 3552350196705881083
+    second: HC_Enemy_Zombie_3
+  - first:
+      213: 721554335652070150
+    second: HC_Enemy_Zombie_4
+  - first:
+      213: -6643917587926111928
+    second: HC_Enemy_Zombie_5
+  - first:
+      213: -6338862198592285273
+    second: HC_Enemy_Zombie_6
+  - first:
+      213: 4927881000239292258
+    second: HC_Enemy_Zombie_7
+  - first:
+      213: 1989504159310980824
+    second: HC_Enemy_Zombie_8
+  - first:
+      213: -2087068006487631114
+    second: HC_Enemy_Zombie_9
+  - first:
+      213: -7669800827136958363
+    second: HC_Enemy_Zombie_10
+  - first:
+      213: -6599279203370652629
+    second: HC_Enemy_Zombie_11
+  - first:
+      213: 8608320047801802704
+    second: HC_Enemy_Zombie_12
+  - first:
+      213: -4642531039833621591
+    second: HC_Enemy_Zombie_13
+  - first:
+      213: -6852189725972777935
+    second: HC_Enemy_Zombie_14
+  - first:
+      213: 5921073798131882086
+    second: HC_Enemy_Zombie_15
+  - first:
+      213: 7040100731486891294
+    second: HC_Enemy_Zombie_16
+  - first:
+      213: 7913509140965011572
+    second: HC_Enemy_Zombie_17
+  - first:
+      213: 6305382609804566100
+    second: HC_Enemy_Zombie_18
+  - first:
+      213: 698629315973149420
+    second: HC_Enemy_Zombie_19
+  - first:
+      213: 8803196358382890526
+    second: HC_Enemy_Zombie_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 81
+        width: 27
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561011a411a4879c0800000000000000
+      internalID: -3929309236763229851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 81
+        width: 28
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb29716bffbaf270800000000000000
+      internalID: 8285145550894476276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 81
+        width: 28
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8ca55562bac94c0800000000000000
+      internalID: -4279357364779693914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 81
+        width: 30
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb6178ceab7c4130800000000000000
+      internalID: 3552350196705881083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 81
+        width: 30
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6034fa668d9730a00800000000000000
+      internalID: 721554335652070150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 81
+        width: 28
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849a1be97201cc3a0800000000000000
+      internalID: -6643917587926111928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 81
+        width: 27
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a551c44a66d708a0800000000000000
+      internalID: -6338862198592285273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 81
+        width: 27
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fd8a229a9536440800000000000000
+      internalID: 4927881000239292258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_8
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 81
+        width: 28
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6a4e6fd732c9b10800000000000000
+      internalID: 1989504159310980824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 25
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fad833b4be3903e0800000000000000
+      internalID: -2087068006487631114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 10
+        width: 25
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5602188b8c46f8590800000000000000
+      internalID: -7669800827136958363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 10
+        width: 31
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c287d6786aa64a0800000000000000
+      internalID: -6599279203370652629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_12
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 10
+        width: 31
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df99128975e67770800000000000000
+      internalID: 8608320047801802704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 10
+        width: 31
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abfdffcd9a629fb0800000000000000
+      internalID: -4642531039833621591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 10
+        width: 27
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134bfc9afb128e0a0800000000000000
+      internalID: -6852189725972777935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_15
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 10
+        width: 26
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668168a8f31eb2250800000000000000
+      internalID: 5921073798131882086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_16
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 10
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d6e33b05673b160800000000000000
+      internalID: 7040100731486891294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 10
+        width: 31
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470b60ad2ae62dd60800000000000000
+      internalID: 7913509140965011572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_18
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 10
+        width: 31
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e93568318318750800000000000000
+      internalID: 6305382609804566100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_19
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 10
+        width: 11
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2f04059a702b900800000000000000
+      internalID: 698629315973149420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_Enemy_Zombie_20
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 10
+        width: 19
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1eac65527c3b2a70800000000000000
+      internalID: 8803196358382890526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
