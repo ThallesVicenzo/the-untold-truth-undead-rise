@@ -28,8 +28,8 @@ public class ZombieController : MonoBehaviour
             rb.mass = 1000;
             this.enabled = false;
         }
-        skin.GetComponent<Animator>().SetFloat("playerDistance", Vector2.Distance(transform.position, player.transform.position));
-        if (Vector2.Distance(transform.position, player.transform.position) < 10)
+        skin.GetComponent<Animator>().SetFloat("playerDistance", Vector2.Distance(transform.position, player.GetComponent<CapsuleCollider2D>().bounds.center));
+        if (Vector2.Distance(transform.position, player.GetComponent<CapsuleCollider2D>().bounds.center) < 10)
         {
             zombieRise = zombieRise + Time.deltaTime;
             if (zombieRise > 1 && this.enabled)
