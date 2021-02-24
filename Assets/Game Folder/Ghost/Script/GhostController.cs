@@ -23,7 +23,7 @@ public class GhostController : MonoBehaviour
     {
         if (goRight == true)
         {
-            skin.localScale = new Vector3(4.9436f, 4.9436f, 4.9436f);
+            skin.localScale = new Vector3(1f, 1f, 1f);
 
             if(Vector2.Distance(transform.position, a.position) < 0.1f)
             {
@@ -34,7 +34,7 @@ public class GhostController : MonoBehaviour
         }
         else
         {
-            skin.localScale = new Vector3(-4.9436f, 4.9436f, 4.9436f);
+            skin.localScale = new Vector3(-1f, 1f, 1f);
             if (Vector2.Distance(transform.position, b.position) < 0.1f)
             {
                 transform.position = a.position;
