@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BatControler : MonoBehaviour
 {
-    public Transform Player;
+    public Transform player;
 
     public float attackTime;
 
@@ -17,25 +17,25 @@ public class BatControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<Character>().life <= 0)
+        if (GetComponent<Character>().life <= 0)
         {
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 5;
             this.enabled = false;
         }
-        if(Vector2.Distance(transform.position, Player.GetComponent<CapsuleCollider2D>().bounds.center) > 1f)
+        if (Vector2.Distance(transform.position, player.GetComponent<CapsuleCollider2D>().bounds.center) > 1f)
         {
-            attackTime = 0;            
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, 2f * Time.deltaTime);
+            attackTime = 0;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, 2f * Time.deltaTime);
         }
         else
         {
             attackTime = attackTime + Time.deltaTime;
-            if(attackTime >= 1)
+            if (attackTime >= 1)
             {
                 attackTime = 0;
-                Player.GetComponent<Character>().life--;
-            }            
+                player.GetComponent<Character>().PlayerDamage(1);
+            }
         }
 
     }

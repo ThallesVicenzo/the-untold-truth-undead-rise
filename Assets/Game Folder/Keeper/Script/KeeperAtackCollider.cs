@@ -16,12 +16,12 @@ public class KeeperAtackCollider : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.tag == "Player")
+        if(collision.CompareTag("Player"))
         {
-            other.GetComponent<Character>().life--;            
-        }
+            collision.GetComponent<Character>().PlayerDamage(1);          
+        }        
 
     }
         

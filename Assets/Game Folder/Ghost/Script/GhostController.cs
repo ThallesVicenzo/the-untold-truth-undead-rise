@@ -47,7 +47,7 @@ public class GhostController : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            other.GetComponent<Character>().life--;            
+            other.GetComponent<Character>().PlayerDamage(1);          
         }        
     }
 
