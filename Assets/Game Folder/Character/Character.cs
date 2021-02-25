@@ -11,21 +11,21 @@ public class Character : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(life <= 0)
+        if (life <= 0)
         {
 
             skin.GetComponent<Animator>().Play("Die");
 
-        } 
+        }
     }
-    
-    public void PlayerDamage( int value )
+
+    public void PlayerDamage(int value)
     {
         life = life - value;
         skin.GetComponent<Animator>().Play("PlayerDamage", 1);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GhostController : MonoBehaviour
-{   
+{
     public Transform a;
     public Transform b;
 
@@ -15,7 +15,7 @@ public class GhostController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,9 +25,9 @@ public class GhostController : MonoBehaviour
         {
             skin.localScale = new Vector3(1f, 1f, 1f);
 
-            if(Vector2.Distance(transform.position, a.position) < 0.1f)
+            if (Vector2.Distance(transform.position, a.position) < 0.1f)
             {
-                transform.position = b.position; 
+                transform.position = b.position;
             }
             transform.position = Vector2.MoveTowards(transform.position, a.position, 10 * Time.deltaTime);
 
@@ -43,12 +43,12 @@ public class GhostController : MonoBehaviour
 
         }
     }
-     private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            other.GetComponent<Character>().PlayerDamage(1);          
-        }        
+            collision.GetComponent<Character>().PlayerDamage(1);
+        }
     }
 
 
