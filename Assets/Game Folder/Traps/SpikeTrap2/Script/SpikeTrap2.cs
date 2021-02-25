@@ -21,7 +21,7 @@ public class SpikeTrap2 : MonoBehaviour
         {
             //other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             //other.transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
-            other.GetComponent<Character>().life--;
+            other.GetComponent<Character>().PlayerDamage(1);
         }
     }
 }
