@@ -65,6 +65,7 @@ public class PlayerControler : MonoBehaviour
         if(GetComponent<Character>().life <= 0)
         {
             this.enabled = false;
+            rb.simulated = false;
         }
 
         dashTime = dashTime + Time.deltaTime;
