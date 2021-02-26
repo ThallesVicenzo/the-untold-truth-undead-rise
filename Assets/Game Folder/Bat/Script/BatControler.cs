@@ -31,7 +31,7 @@ public class BatControler : MonoBehaviour
         else
         {
             attackTime = attackTime + Time.deltaTime;
-            if (attackTime >= 1)
+            if (attackTime >= 0.6f)
             {
                 attackTime = 0;
                 player.GetComponent<Character>().PlayerDamage(1);
