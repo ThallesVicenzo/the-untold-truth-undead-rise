@@ -38,6 +38,6 @@ public class BearTrap : MonoBehaviour
     void ReleasePlayer()
     {
         player.GetComponent<PlayerControler>().enabled = true;
-        player.GetComponent<Rigidbody2D>().mass = 1;
+        player.GetComponent<Rigidbody2D>().mass = 1.206975f;
     }
 }
