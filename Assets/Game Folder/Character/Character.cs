@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
     public int life;
     public Transform skin;
     public Transform cam;
+    public Text HeartCountText;
 
 
     // Start is called before the first frame update
@@ -20,10 +22,10 @@ public class Character : MonoBehaviour
     {
         if (life <= 0)
         {
-
             skin.GetComponent<Animator>().Play("Die");
-
         }
+
+        HeartCountText.text = "x" + life.ToString();
     }
 
     public void PlayerDamage(int value)
