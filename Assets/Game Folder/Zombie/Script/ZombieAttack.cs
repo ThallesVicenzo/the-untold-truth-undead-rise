@@ -19,7 +19,7 @@ public class ZombieAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Character>().PlayerDamage(1);
+            other.GetComponent<Character>().PlayerDamage(2);
         }
     }
 }
