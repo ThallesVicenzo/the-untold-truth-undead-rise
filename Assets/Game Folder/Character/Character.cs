@@ -35,6 +35,6 @@ public class Character : MonoBehaviour
         life = life - value;
         skin.GetComponent<Animator>().Play("PlayerDamage", 1);
         cam.GetComponent<Animator>().Play("CameraPlayerDamage");
-        GetComponent<PlayerControler>().audioSource.PlayOneShot(GetComponent<PlayerControler>().damageSound);
+        GetComponent<PlayerControler>().audioSource.PlayOneShot(GetComponent<PlayerControler>().damageSound, 0.5f);
     }
 }
