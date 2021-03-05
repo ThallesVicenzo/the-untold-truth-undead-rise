@@ -47,22 +47,22 @@ public class PlayerControler : MonoBehaviour
             if(numeroCombo > 2)
             {
                 numeroCombo = 1;
-            }   
+            }  
             tempoCombo = 0;
-            skin.GetComponent<Animator>().Play("PlayerAtack" + numeroCombo);
-                    if(numeroCombo == 1)
-        {
-            audioSource.PlayOneShot(attack1Sound);
-        }
-        if(numeroCombo == 2)
-        {
-            audioSource.PlayOneShot(attack2Sound);
+            skin.GetComponent<Animator>().Play("PlayerAtack" + numeroCombo, -1);
+            if(numeroCombo == 1)
+            {
+                audioSource.PlayOneShot(attack1Sound);
+            }
+            if(numeroCombo == 2)
+            {
+                audioSource.PlayOneShot(attack2Sound);
+            }
         }
         if (tempoCombo >= 1)
         {
             numeroCombo = 0;
-        }
-        }
+        } 
         //player mov
         if(Input.GetButtonDown("Jump") && floorCollider.GetComponent<FloorCollider>().canJump == true)
         {
