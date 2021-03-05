@@ -27,7 +27,7 @@ public class FloorCollider : MonoBehaviour
         if (collision.CompareTag("Floor"))
         {
             canJump = true;
-            audioSource.PlayOneShot(groundedSound);
+            audioSource.PlayOneShot(groundedSound, 0.5f);
         }
 
     }
