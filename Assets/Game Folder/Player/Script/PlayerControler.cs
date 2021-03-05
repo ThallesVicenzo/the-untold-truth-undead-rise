@@ -1,10 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControler : MonoBehaviour
 {
 
     Rigidbody2D rb;
     Vector2 vel;
+    public AudioSource audioSource;
+    public AudioClip attack1Sound;
+    public AudioClip attack2Sound;
+    public AudioClip groundedSound;
+    public AudioClip damageSound;
+    public AudioClip dashSound;
 
 
     public Transform floorCollider;
@@ -14,16 +21,26 @@ public class PlayerControler : MonoBehaviour
     public float tempoCombo;
     public float dashTime;
 
+    public string currentLevel;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
-        
+        currentLevel = SceneManager.GetActiveScene().name;
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!currentLevel.Equals(SceneManager.GetActiveScene().name))
+        {
+            currentLevel = SceneManager.GetActiveScene().name;
+            transform.position = GameObject.Find("Spawn").transform.position;
+        }
+
         tempoCombo = tempoCombo + Time.deltaTime;
         if (Input.GetButtonDown("Fire1") && tempoCombo > 0.5f)
         {
