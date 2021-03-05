@@ -5,6 +5,8 @@ using UnityEngine;
 public class FloorCollider : MonoBehaviour
 {
     public bool canJump;
+    public AudioSource audioSource;
+    public AudioClip groundedSound;
 
 
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class FloorCollider : MonoBehaviour
         if (collision.CompareTag("Floor"))
         {
             canJump = true;
+            audioSource.PlayOneShot(groundedSound);
         }
 
     }
