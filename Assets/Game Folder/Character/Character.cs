@@ -24,8 +24,10 @@ public class Character : MonoBehaviour
         {
             skin.GetComponent<Animator>().Play("Die");
         }
-
-        HeartCountText.text = "x" + life.ToString();
+        if(transform.CompareTag("Player"))
+        {
+            HeartCountText.text = "x" + life.ToString();
+        }
     }
 
     public void PlayerDamage(int value)
