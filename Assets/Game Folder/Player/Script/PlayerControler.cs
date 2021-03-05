@@ -50,22 +50,19 @@ public class PlayerControler : MonoBehaviour
             }   
             tempoCombo = 0;
             skin.GetComponent<Animator>().Play("PlayerAtack" + numeroCombo);
-        }
-        if(numeroCombo == 1)
+                    if(numeroCombo == 1)
         {
-            audioSource.PlayOneShot(attack1Sound, 0.5f);
+            audioSource.PlayOneShot(attack1Sound);
         }
-
         if(numeroCombo == 2)
         {
-            audioSource.PlayOneShot(attack2Sound, 0.5f);
+            audioSource.PlayOneShot(attack2Sound);
         }
-
         if (tempoCombo >= 1)
         {
             numeroCombo = 0;
         }
-
+        }
         //player mov
         if(Input.GetButtonDown("Jump") && floorCollider.GetComponent<FloorCollider>().canJump == true)
         {
@@ -96,13 +93,11 @@ public class PlayerControler : MonoBehaviour
         dashTime = dashTime + Time.deltaTime;
         if (Input.GetButtonDown("Fire2") && dashTime > 1)
         {
-            audioSource.PlayOneShot(dashSound, 0.5f);
             dashTime = 0;
             skin.GetComponent<Animator>().Play("PlayerDash");
             rb.velocity = Vector2.zero;
             rb.AddForce(new Vector2(skin.localScale.x * 1000, 0));
-
-
+            audioSource.PlayOneShot(dashSound);
         }
 
 
