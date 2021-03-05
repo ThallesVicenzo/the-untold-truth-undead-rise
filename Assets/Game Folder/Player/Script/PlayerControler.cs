@@ -9,6 +9,7 @@ public class PlayerControler : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip attack1Sound;
     public AudioClip attack2Sound;
+    public AudioClip groundedSound;
     public AudioClip damageSound;
     public AudioClip dashSound;
 
@@ -51,15 +52,6 @@ public class PlayerControler : MonoBehaviour
             tempoCombo = 0;
             skin.GetComponent<Animator>().Play("PlayerAtack" + numeroCombo);
         }
-        if(numeroCombo == 1)
-        {
-            audioSource.PlayOneShot(attack1Sound, 0.5f);
-        }
-
-        if(numeroCombo == 2)
-        {
-            audioSource.PlayOneShot(attack2Sound, 0.5f);
-        }
 
         if (tempoCombo >= 1)
         {
@@ -96,7 +88,6 @@ public class PlayerControler : MonoBehaviour
         dashTime = dashTime + Time.deltaTime;
         if (Input.GetButtonDown("Fire2") && dashTime > 1)
         {
-            audioSource.PlayOneShot(dashSound, 0.5f);
             dashTime = 0;
             skin.GetComponent<Animator>().Play("PlayerDash");
             rb.velocity = Vector2.zero;
