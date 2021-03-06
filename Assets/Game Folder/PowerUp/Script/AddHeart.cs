@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class AddHeart : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioSource audioSource;
+    public AudioClip clip;
+    //life add
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
-        {
+        {   
+            audioSource.PlayOneShot(clip);
             other.GetComponent<Character>().life++;
             Destroy(transform.gameObject);
         }
