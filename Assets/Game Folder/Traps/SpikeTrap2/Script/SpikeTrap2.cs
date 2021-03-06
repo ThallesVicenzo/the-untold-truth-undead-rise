@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpikeTrap2 : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,12 @@ public class SpikeTrap2 : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            //other.transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
             other.GetComponent<Character>().PlayerDamage(1);
         }
+    }
+    
+    public void PlaySound()
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
