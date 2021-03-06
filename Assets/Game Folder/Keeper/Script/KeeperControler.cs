@@ -9,6 +9,9 @@ public class KeeperControler : MonoBehaviour
     public Transform a;
     public Transform b;
 
+    public AudioSource audioSource;
+    public AudioClip dieSound;
+
     public Transform skin;
     public Transform KeeperRange;
     public bool goRight;
@@ -24,6 +27,7 @@ public class KeeperControler : MonoBehaviour
     {
         if (GetComponent<Character>().life <= 0)
         {
+            audioSource.PlayOneShot(dieSound);
             GetComponent<CapsuleCollider2D>().enabled = false;
             KeeperRange.GetComponent<CircleCollider2D>().enabled = false;
             this.enabled = false;
