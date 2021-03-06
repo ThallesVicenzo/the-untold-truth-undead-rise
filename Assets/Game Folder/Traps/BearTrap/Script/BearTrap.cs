@@ -6,6 +6,9 @@ public class BearTrap : MonoBehaviour
 {
     Transform player;
     public Transform skin;
+    public AudioSource audioSource;
+    public AudioClip clip;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,7 @@ public class BearTrap : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            audioSource.PlayOneShot(clip);
             skin.GetComponent<Animator>().Play("Stuck");
             other.transform.position = transform.position;
             other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
