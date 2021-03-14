@@ -15,6 +15,10 @@ public class PlayerControler : MonoBehaviour
 
     public Transform floorCollider;
     public Transform skin;
+
+    public Transform gameOverScreen;
+    public Transform pauseScreen;
+
     public float facingDirection;
     public int numeroCombo;
     public float tempoCombo;
@@ -83,9 +87,15 @@ public class PlayerControler : MonoBehaviour
         {
             skin.GetComponent<Animator>().SetBool("PlayerRun", false);
         }
-        //end
+        //pause game
+        if(Input.GetButtonDown("Cancel"))
+        {
+            pauseScreen.GetComponent<Pause>().enabled = !pauseScreen.GetComponent<Pause>().enabled;
+        }
+        //player life
         if(GetComponent<Character>().life <= 0)
         {
+            gameOverScreen.GetComponent<GameOver>().enabled = true;
             this.enabled = false;
             rb.simulated = false;
         }
@@ -110,6 +120,10 @@ public class PlayerControler : MonoBehaviour
             rb.velocity = vel;
         }
         
+    }
+    public void DestroyPlayer()
+    {
+        Destroy(transform.gameObject);
     }
 
 }
