@@ -17,10 +17,8 @@ public class SpikeTrap : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {   
-            //other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            //other.transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
             other.GetComponent<Character>().PlayerDamage(999);
         }    
     }
