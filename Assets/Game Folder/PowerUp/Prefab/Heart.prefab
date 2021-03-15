@@ -114,7 +114,6 @@ GameObject:
   - component: {fileID: 8423500294075194714}
   - component: {fileID: 8423500294075194713}
   - component: {fileID: 8423500294075194692}
-  - component: {fileID: 1865575565}
   - component: {fileID: 52946299698878744}
   m_Layer: 0
   m_Name: Heart
@@ -334,22 +333,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!70 &1865575565
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423500294075194712}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.000063604304, y: 0.0047668535}
-  m_Size: {x: 0.14326465, y: 0.14326465}
-  m_Direction: 0
 --- !u!114 &52946299698878744
 MonoBehaviour:
   m_ObjectHideFlags: 0
