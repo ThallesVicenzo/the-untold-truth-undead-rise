@@ -22,4 +22,5 @@ public class SpikeTrap : MonoBehaviour
             other.GetComponent<Character>().PlayerDamage(999);
         }    
     }
+    
 }
