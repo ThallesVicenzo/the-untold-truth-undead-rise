@@ -21,7 +21,7 @@ public class TriggerLevel1Level2 : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Level2");
         }
     }
 }
