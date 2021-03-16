@@ -105,8 +105,10 @@ public class PlayerControler : MonoBehaviour
             dashTime = 0;
             skin.GetComponent<Animator>().Play("PlayerDash");
             rb.velocity = Vector2.zero;
+            rb.gravityScale = 0;
             rb.AddForce(new Vector2(skin.localScale.x * 1000, 0));
             audioSource.PlayOneShot(dashSound);
+            Invoke("RestoreGravityScale", 0.3f);
         }
 
 
@@ -119,6 +121,11 @@ public class PlayerControler : MonoBehaviour
             rb.velocity = vel;
         }
         
+    }
+
+    void RestoreGravityScale()
+    {
+        rb.gravityScale = 5;
     }
     public void DestroyPlayer()
     {
