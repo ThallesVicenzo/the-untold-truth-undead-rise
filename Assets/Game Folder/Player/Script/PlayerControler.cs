@@ -81,7 +81,6 @@ public class PlayerControler : MonoBehaviour
         {
             skin.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1f, 1f);
             skin.GetComponent<Animator>().SetBool("PlayerRun", true);
-            facingDirection = Input.GetAxisRaw("Horizontal");
         }
         else
         {
