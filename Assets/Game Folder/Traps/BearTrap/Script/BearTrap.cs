@@ -36,6 +36,7 @@ public class BearTrap : MonoBehaviour
             player = other.transform;
             other.GetComponent<PlayerControler>().enabled = false;
             Invoke("ReleasePlayer", 3);
+            Invoke("ResetTrap", 10);
         }
     }
 
@@ -43,5 +44,11 @@ public class BearTrap : MonoBehaviour
     {
         player.GetComponent<PlayerControler>().enabled = true;
         player.GetComponent<Rigidbody2D>().mass = 1.206975f;
+    }
+
+    void ResetTrap()
+    {
+        GetComponent<BoxCollider2D>().enabled = true;
+        skin.GetComponent<Animator>().Play("UnStuck", -1);
     }
 }
