@@ -73,7 +73,7 @@ public class PlayerControler : MonoBehaviour
             skin.GetComponent<Animator>().Play("PlayerJump");
             rb.velocity = Vector2.zero;
             floorCollider.GetComponent<FloorCollider>().canJump = false;
-            rb.AddForce(new Vector2(0, 1000));
+            rb.AddForce(new Vector2(0, 1100));
         }
         vel = new Vector2(Input.GetAxisRaw("Horizontal") *7f, rb.velocity.y);
 
