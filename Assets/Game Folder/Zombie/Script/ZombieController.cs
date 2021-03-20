@@ -6,7 +6,7 @@ public class ZombieController : MonoBehaviour
 {
     public Transform skin;
     public Transform dead;
-    public PlayerControler player;
+    public Transform player;
     Vector3 moveDirecton;
     Rigidbody2D rb;
     public float zombieSpeed = 0.4f;
@@ -17,6 +17,7 @@ public class ZombieController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class ZombieController : MonoBehaviour
             rb.mass = 1000;
             this.enabled = false;
         }
+
         skin.GetComponent<Animator>().SetFloat("playerDistance", Vector2.Distance(transform.position, player.GetComponent<CapsuleCollider2D>().bounds.center));
         if (Vector2.Distance(transform.position, player.GetComponent<CapsuleCollider2D>().bounds.center) < 10)
         {
@@ -44,6 +46,7 @@ public class ZombieController : MonoBehaviour
                 skin.transform.localScale = new Vector3(player.transform.position.x > transform.position.x ? -1f : 1f, 1f, 1f);
             }
         }
+
         if (skin.GetComponent<Animator>().GetBool("isWalking"))
         {
             moveDirecton = new Vector3(player.transform.position.x - transform.position.x, transform.position.y, 0);
