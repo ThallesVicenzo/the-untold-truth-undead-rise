@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pole : MonoBehaviour
 {
     public Transform spike;
+    public AudioClip poleSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class Pole : MonoBehaviour
         {
             spike.GetComponent<Animator>().Play("SpikeAnimation");
             GetComponent<Animator>().Play("Pole");
+            GetComponent<AudioSource>().PlayOneShot(poleSound);
         }
 
 

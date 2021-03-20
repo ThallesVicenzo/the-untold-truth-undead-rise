@@ -6,7 +6,7 @@ public class Laser : MonoBehaviour
 {
     public Transform player;
     // Start is called before the first frame update
-    private void OnEnable() 
+    private void OnEnable()
     {
         player = GameObject.Find("Player").transform;
         transform.right = transform.position - player.position;
@@ -18,12 +18,12 @@ public class Laser : MonoBehaviour
         transform.position += transform.right * -10 * Time.deltaTime;
 
     }
-     private void OnTriggerEnter2D(Collider2D other)
-    {   
-        if(other.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-           other.GetComponent<Character>().PlayerDamage(1);
+            other.GetComponent<Character>().PlayerDamage(1);
         }
-        
+
     }
 }
