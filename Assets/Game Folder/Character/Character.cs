@@ -13,6 +13,7 @@ public class Character : MonoBehaviour
 
     public AudioClip bossBattleMusic;
     public AudioClip youWin;
+    public AudioClip heartSound;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,11 @@ public class Character : MonoBehaviour
         {
             skin.GetComponent<Animator>().Play("Die");
         }
-        if(transform.CompareTag("Player"))
+        if (transform.CompareTag("Player"))
         {
             HeartCountText.text = "x" + life.ToString();
 
-            if(SceneManager.GetActiveScene().name.Equals("BossLevel"))
+            if (SceneManager.GetActiveScene().name.Equals("BossLevel"))
             {
                 cam.GetComponent<Animator>().enabled = false;
                 cam.GetComponent<Camera>().orthographicSize = 10.3f;
@@ -39,9 +40,9 @@ public class Character : MonoBehaviour
                 cam.parent = null;
                 SceneManager.MoveGameObjectToScene(cam.gameObject, SceneManager.GetActiveScene());
 
-                if(GameObject.Find("BossBrain").GetComponent<Character>().life > 0)
+                if (GameObject.Find("BossBrain").GetComponent<Character>().life > 0)
                 {
-                    if(cam.GetComponent<AudioSource>().clip != bossBattleMusic)
+                    if (cam.GetComponent<AudioSource>().clip != bossBattleMusic)
                     {
                         cam.GetComponent<AudioSource>().clip = bossBattleMusic;
                         cam.GetComponent<AudioSource>().Play();
@@ -49,22 +50,22 @@ public class Character : MonoBehaviour
                 }
                 else
                 {
-                    if(cam.GetComponent<AudioSource>().clip != null)
-                        {
-                            cam.GetComponent<AudioSource>().Stop();
-                            cam.GetComponent<AudioSource>().clip = null;
-                            cam.GetComponent<AudioSource>().PlayOneShot(youWin);
-                        }
+                    if (cam.GetComponent<AudioSource>().clip != null)
+                    {
+                        cam.GetComponent<AudioSource>().Stop();
+                        cam.GetComponent<AudioSource>().clip = null;
+                        cam.GetComponent<AudioSource>().PlayOneShot(youWin);
+                    }
                 }
-                
+
             }
         }
 
-        if(transform.name.Equals("BossBrain"))
+        if (transform.name.Equals("BossBrain"))
         {
             transform.GetChild(0).GetComponent<SpriteRenderer>().size = new Vector2(1.78f, (life * 1.09f / 30));
 
-            if(life <= 0)
+            if (life <= 0)
             {
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
@@ -72,7 +73,7 @@ public class Character : MonoBehaviour
                 GameObject.Find("Player").GetComponent<PlayerControler>().enabled = false;
                 GameObject.Find("Player").GetComponent<CapsuleCollider2D>().enabled = false;
                 GameObject.Find("Player").GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-    
+
             }
         }
     }

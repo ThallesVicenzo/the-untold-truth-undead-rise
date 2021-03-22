@@ -11,6 +11,7 @@ public class PlayerControler : MonoBehaviour
     public AudioClip attack2Sound;
     public AudioClip damageSound;
     public AudioClip dashSound;
+    public AudioClip heartSound;
 
 
     public Transform floorCollider;
@@ -110,7 +111,6 @@ public class PlayerControler : MonoBehaviour
             audioSource.PlayOneShot(dashSound);
             Invoke("RestoreGravityScale", 0.3f);
         }
-
 
     }
 

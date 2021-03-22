@@ -1182,6 +1182,7 @@ MonoBehaviour:
   attack2Sound: {fileID: 8300000, guid: b1dbfb644a11ac145a05a1a5bd4114c1, type: 3}
   damageSound: {fileID: 8300000, guid: ae80387cf61b73740af9de1c1d5a91ed, type: 3}
   dashSound: {fileID: 8300000, guid: bc0f1d06f10cb6c4982c3add27ede4db, type: 3}
+  heartSound: {fileID: 8300000, guid: 3c31bd57e130fd7458061b7155622764, type: 3}
   floorCollider: {fileID: 6876213322800269638}
   skin: {fileID: 6876213323159754976}
   gameOverScreen: {fileID: 389635844}
