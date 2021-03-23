@@ -29,7 +29,7 @@ public class ZombieController : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = false;
             dead.GetComponent<BoxCollider2D>().enabled = true;
             skin.GetComponentInChildren<CapsuleCollider2D>().enabled = false;
-            rb.mass = 1000;
+            rb.mass = 5000;
             this.enabled = false;
         }
 

@@ -13,7 +13,6 @@ public class Character : MonoBehaviour
 
     public AudioClip bossBattleMusic;
     public AudioClip youWin;
-    public AudioClip heartSound;
 
     // Start is called before the first frame update
     void Start()
