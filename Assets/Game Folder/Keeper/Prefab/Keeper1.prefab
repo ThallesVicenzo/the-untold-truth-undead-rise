@@ -181,8 +181,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930206346099231667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.6489, y: 9.6489, z: 3.2163}
+  m_LocalPosition: {x: -0.66461, y: -2.07, z: 0}
+  m_LocalScale: {x: 8.3547, y: 8.3547, z: 8.3547}
   m_Children:
   - {fileID: 6930206346574134062}
   m_Father: {fileID: 6930206345589560865}
@@ -206,7 +206,7 @@ MonoBehaviour:
   dieSound: {fileID: 8300000, guid: dfd60d0a09b159749a38bedc626a8f14, type: 3}
   skin: {fileID: 6930206346574134062}
   KeeperRange: {fileID: 6930206345572937702}
-  goRight: 0
+  goRight: 1
 --- !u!114 &6930206346099231694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +223,8 @@ MonoBehaviour:
   skin: {fileID: 6930206346574134062}
   cam: {fileID: 0}
   HeartCountText: {fileID: 0}
+  bossBattleMusic: {fileID: 0}
+  youWin: {fileID: 0}
 --- !u!70 &6930206346099231693
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -359,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930206346380860398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.38, y: 0, z: 0}
+  m_LocalPosition: {x: -5.95, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6930206345589560865}
@@ -605,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930206347214370117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.96, y: 0, z: 0}
+  m_LocalPosition: {x: 1.81, y: -2.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6930206345589560865}
