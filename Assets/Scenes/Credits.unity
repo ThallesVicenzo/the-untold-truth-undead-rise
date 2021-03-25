@@ -520,8 +520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000013351, y: -46}
-  m_SizeDelta: {x: 334.8179, y: 164.3499}
+  m_AnchoredPosition: {x: -1.6502, y: -46}
+  m_SizeDelta: {x: 209.8551, y: 164.3499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015339013
 MonoBehaviour:
@@ -558,7 +558,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Made by:\nThalles Vicenzo Costa\nGabriel dos santos Lima\nRone Clay Oliveira
     Andrade\nRoberto Fernando\nIago Barreto Soares\nMatheus Almeida Landislau\nCarlos
-    Daniel\nJos\xE9 Apr\xEDgio Carneiro Neto"
+    Daniel Santos Ribeiro\nJos\xE9 Apr\xEDgio Carneiro Neto"
 --- !u!222 &1015339014
 CanvasRenderer:
   m_ObjectHideFlags: 0

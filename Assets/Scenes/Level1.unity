@@ -31580,7 +31580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526170560223663269, guid: 77fbd32cfaf2d5b49880d09f047257d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.98
+      value: 83.15
       objectReference: {fileID: 0}
     - target: {fileID: 4526170560223663269, guid: 77fbd32cfaf2d5b49880d09f047257d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -94582,6 +94582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193258024}
     m_Modifications:
+    - target: {fileID: 1981956158211744322, guid: de6aef5218bb07347b15732df0a927e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2701330747911275665, guid: de6aef5218bb07347b15732df0a927e7, type: 3}
       propertyPath: m_Name
       value: BigDestructibleDoor
