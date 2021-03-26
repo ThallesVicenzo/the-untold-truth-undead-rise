@@ -23,4 +23,11 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        GetComponent<CanvasGroup>().alpha = 0;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
 }
