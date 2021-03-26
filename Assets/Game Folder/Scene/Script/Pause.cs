@@ -17,4 +17,11 @@ public class Pause : MonoBehaviour
         GetComponent<CanvasGroup>().alpha = 0;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        GetComponent<CanvasGroup>().alpha = 0;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
 }
