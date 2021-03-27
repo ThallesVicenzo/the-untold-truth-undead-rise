@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public Canvas canvas;
     public void NewGame()
     {
         SceneManager.LoadScene("Level0");
@@ -23,12 +22,5 @@ public class MainMenu : MonoBehaviour
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
-    }
-
-    public void ResumeGame()
-    {
-        Time.timeScale = 1f;
-        GetComponent<CanvasGroup>().alpha = 0;
-        canvas.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
