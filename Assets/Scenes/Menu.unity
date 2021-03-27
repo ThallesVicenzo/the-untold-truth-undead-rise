@@ -2502,12 +2502,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In a northern war between two great kingdoms, there is more at stake than
-    anyone imagines, something ominous is hidden, something that can change the course
-    of this clash. An insane, power-hungry king wants to break down barriers between
-    life and death to fulfill his goals, and then end this battle once and for all.
-    However, his plans are soon to be frustrated, as our unexpected hero, at random,
-    entered in a installation of arcane research, and in it he will discover the
+  m_Text: In a northern war between two major kingdoms, there's more at stake than
+    one can imagine, something ominous is hidden, something that can change the course
+    of this conflict. An insane, power-hungry king wants to break down barriers between
+    life and death to fulfil his goals, and then end this battle once and for all.
+    However, his plans are soon to be thwarted, as our unexpected hero, by chance,
+    entered in a installation of arcane research, and therein he will discover the
     dark side of this corrupt reign.
 --- !u!222 &167925486
 CanvasRenderer:
