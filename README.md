@@ -4,3 +4,5 @@ The Untold Truth: Undead Rise features the following characteristics: <br />
 • Fully 2D visuals, making it a pixel art game; <br />
 • Intuitive interactive interface with the user, allowing the software to function with just one click on the initial menu; <br />
 • 4 types of enemies, 1 final boss, traps, and interactive objects with the user, as well as 4 different scenes for exploration;
+![image](https://github.com/ThallesVicenzo/the-untold-truth-undead-rise/assets/77857665/264c68bb-4fa0-4399-acc3-5c52b01fb60e)
+
